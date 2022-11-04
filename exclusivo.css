@@ -1,0 +1,554 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.topo {
+    margin: 0;
+    background-color: #41A3A9;
+    width: 100%;
+    min-height: 32vh;
+    width: 1583px;
+
+}
+
+.container {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 0px;
+    background-color: #41A3A9;
+    width: 1583px;
+}
+
+.logo {
+    margin-top: 12px;
+    margin-left: 167px;
+
+}
+
+.cabecalho {
+    padding-left: 30px;
+
+
+}
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+    /*retira a linha debaixo do nome*/
+    padding-right: 30px;
+    /*afasta um item do outro*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    position: relative;
+    /*necessário para o efeito de seleção*/
+
+}
+
+.cabecalho nav a::after {
+    /*efeito de seleção da aba desejada*/
+    content: " ";
+    /*conteúdo vazio*/
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #f65e2b, #FF764A);
+    position: absolute;
+    top: 20px;
+    /*coloca o tracejado para baixo*/
+    left: 0px;
+    /*tempo para iniciar o efeito*/
+}
+
+.cabecalho nav a:hover::after {
+    width: 60px;
+}
+
+.icones {
+    margin-left: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.bandeira {
+    margin-right: 20px;
+}
+
+.planeta {
+    margin-right: 20px;
+}
+
+.idioma nav a {
+    margin-left: 6px;
+    color: white;
+    text-decoration: none;
+    /*retira a linha debaixo do nome*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.entrar button {
+    width: 110px;
+    height: 40px;
+    justify-content: left;
+    display: flex;
+    margin-left: 30px;
+    border-radius: 5px;
+    border-color: transparent;
+    /*borda transparente*/
+    cursor: pointer;
+    color: white;
+}
+
+.entrar img {
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.entrar h1 {
+    color: black;
+    margin-left: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.outdoor{
+    width: 1583px;
+    height: 250px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; /*colocar em negrito!!!!*/
+    margin-top: -30px;
+}
+
+#tempo{
+    font-size: 40px;
+    margin-left: 330px;
+    margin-top: 90px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+}
+
+#programamos{
+    font-size: 35px;
+    margin-left: 520px;
+    margin-top: 130px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+
+}
+
+.divPesquisa {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -210px;
+    display: block;
+}
+
+.pesquisa {
+    margin-left: 240px;
+    margin-right: 280px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: left;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #FEFEFE;
+}
+
+.pesquisa h2 {
+    font-size: 25px;
+    margin-left: 63px;
+    margin-top: 20px;
+}
+
+.pesquisa h3 {
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.pesquisa h4 {
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.barraPesquisa {
+    height: 100px;
+    margin-left: 240px;
+    margin-right: 280px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: left;
+    background-color: #FEFEFE;
+    border-radius: 3px;
+}
+
+.inputPesquisa{
+    margin-left: 15px;
+    text-align:start;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+#barra{
+    width:  140px;
+    height: 30px;
+    border : none;
+}
+
+#barra:focus{
+    outline: none;
+}
+
+#data{
+    height: 30px;
+    width: 80px;
+    border : none;
+}
+
+#data:focus{
+    outline:none;
+}
+
+#quantidade{
+    height: 30px;
+    border : none;
+}
+
+#quantidade:focus{
+    outline : none;
+}
+
+.lupa {
+    position: relative;
+    width: 30px;
+    left: 3px;
+}
+
+.containerPesquisa{
+    display : flex;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 2px;
+}
+
+.calendarioIcone{
+    margin : 4px;
+}
+
+.dinheiroIcone{
+    margin : 4px;
+}
+
+.escolher{
+    margin-top: 70px;
+    margin-left: 28px;
+}
+
+.names{
+    margin-top: 7px;
+    margin-left: 280px;
+    display: block;
+    position: absolute;
+    font-family:'Ubuntu', sans-serif;
+    text-align: start;
+}
+
+#nomeIncluir{
+    display: flex;
+    font-size: 15px;
+    font-weight:normal;
+}
+
+.refeicao{
+    margin-top: 0px;
+    display : flex;
+    position: absolute;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 400px;
+    width: 100px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.refeicaoIcone{
+    margin-left: 7px;
+    margin-top: 1px;
+}
+
+#incluir{
+    margin-left: 6px;
+    margin-top: 3px;
+    display: flex;
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+.names2{
+    margin-top: 7px;
+    margin-left: 512px;
+    display: block;
+    position: absolute;
+    font-family:'Ubuntu', sans-serif;
+    text-align: start;
+}
+
+.hospedagem{
+    margin-top: 0px;
+    display : flex;
+    position: absolute;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 664px;
+    width: 100px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.hospedagemIcone{
+    margin-left: 7px;
+    margin-top: 1px;
+}
+
+.names3{
+    margin-top: 7px;
+    margin-left: 776px;
+    display: block;
+    position: absolute;
+    font-family:'Ubuntu', sans-serif;
+    text-align: start;
+}
+
+.aereo{
+    margin-top: 0px;
+    display : flex;
+    position: absolute;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 882px;
+    width: 100px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.aereoIcone{
+    margin-left: 7px;
+    margin-top: 1px;
+}
+
+.bagagem{
+    margin-top: 0px;
+    display : flex;
+    position: absolute;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 1120px;
+    width: 100px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.malaIcone{
+    margin-left: 7px;
+    margin-top: 1px;
+}
+
+.names4{
+    margin-top: 7px;
+    margin-left: 995px;
+    display: block;
+    position: absolute;
+    font-family:'Ubuntu', sans-serif;
+    text-align: start;
+    font-weight: 300
+}
+
+.finaleira{
+    margin-top: 130px;
+    display : block;
+    margin-left : 307px;
+    text-align: start;
+    display: flex;
+    position: relative;
+}
+
+.localizacao{
+    display : block;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    width: 260px;
+    text-align: start;
+    display: flex;
+    position: relative;
+}
+
+#quantidade1{
+    display: flex;
+    position: relative;
+    margin-left: 3px;
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+
+#quantidade1:focus{
+    outline: none;
+}
+
+.email{
+    display : block;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 2px;
+    width: 260px;
+    text-align: start;
+    display: flex;
+    position: relative;
+}
+
+.emailIcone{
+    margin : 4px;
+    margin-top: 1px;
+}
+
+.telefone{
+    display : block;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 2px;
+    width: 260px;
+    text-align: start;
+    display: flex;
+    position: relative;
+}
+
+.telefoneIcone{
+    margin : 4px;
+    margin-top: 3px;
+}
+
+.names5{
+    margin-top: 1px;
+    margin-left: 810px;
+    display: block;
+    position: absolute;
+    font-family:'Ubuntu', sans-serif;
+    color: red;
+    text-align: start;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+.names6{
+    margin-top: 17px;
+    margin-left: 818px;
+    display: block;
+    position: absolute;
+    font-family:'Ubuntu', sans-serif;
+    color: red;
+    text-align: start;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+#botao {
+    margin-left: 520px;
+    margin-top: 60px;
+    width: 500px;
+    height: 40px;
+    background-color: #FF764A;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    border-color: transparent;
+    border-bottom-style: 3px;
+    border-right-style: 3px;
+    border-radius: 3px;
+}
+
+.centrais{
+    background-color: white;
+    border: 1px solid;
+    border-color: rgb(128, 126, 126);
+    margin-top: 150px;
+    font-family: 'Ubuntu', sans-serif;  
+    list-style: none;
+}
+
+#faleconosco{
+    font-size: 18px;
+    position: absolute;
+    margin-left: 982px;
+    margin-top: 15px;
+}
+
+#central{
+    color: black;
+    margin-top: 40px;
+    position: absolute;
+    font-size: 16px;
+    margin-left: 982px;
+    cursor: pointer;
+}
+
+#cancelamento{
+    color: black;
+    margin-top: 60px;
+    position: absolute;
+    font-size: 16px;
+    margin-left: 982px;
+    cursor: pointer;
+}
+
+.redes{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 285px;
+    padding-top: 20px;
+}
+
+#redesSociais{
+    margin-top: 25px;
+    position: absolute;
+    font-size: 18px;
+}
+
+#facebook{
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#twitter{
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#instagram{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,560 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.topo {
+    margin: 0;
+    background-color: #41A3A9;
+    width: 100%;
+    width: 1583px;
+    height: 80px;
+}
+
+.container {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 0px;
+    background-color: #41A3A9;
+    width: 1583px;
+}
+
+.logo {
+    margin-top: 12px;
+    margin-left: 167px;
+}
+
+.cabecalho {
+    padding-left: 30px;
+}
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+    /*retira a linha debaixo do nome*/
+    padding-right: 30px;
+    /*afasta um item do outro*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    position: relative;
+    /*necessário para o efeito de seleção*/
+
+}
+
+.cabecalho nav a::after {
+    /*efeito de seleção da aba desejada*/
+    content: " ";
+    /*conteúdo vazio*/
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #f65e2b, #FF764A);
+    position: absolute;
+    top: 20px;
+    /*coloca o tracejado para baixo*/
+    left: 0px;
+    /*tempo para iniciar o efeito*/
+}
+
+.cabecalho nav a:hover::after {
+    width: 60px;
+}
+
+.icones {
+    margin-left: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.bandeira {
+    margin-right: 20px;
+}
+
+.planeta {
+    margin-right: 20px;
+}
+
+.idioma nav a {
+    margin-left: 6px;
+    color: white;
+    text-decoration: none;
+    /*retira a linha debaixo do nome*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.entrar button {
+    width: 110px;
+    height: 40px;
+    justify-content: left;
+    display: flex;
+    margin-left: 30px;
+    border-radius: 5px;
+    border-color: transparent;
+    /*borda transparente*/
+    cursor: pointer;
+    color: white;
+}
+
+.entrar img {
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.entrar h1 {
+    color: black;
+    margin-left: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.button{
+    background-color: #A2DEE2;
+    width: 1583px;
+    height: 30px;
+    
+}
+
+.botao{
+    margin-top: 15px;
+    margin-left: 1150px;
+    background-color: #FF764A;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    height: 34px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 8px;
+    border-color: transparent;
+    border-bottom-style: 3px;
+    border-right-style: 3px;
+    border-radius: 3px;
+}
+
+.opcoes{
+    display: flex;
+    background-color: #A2DEE2;
+    width: 1583px;
+}
+
+.containerPesquisa1{
+    margin-top: 0px;
+    display : flex;
+    border : 2px solid rgb(197, 189, 189);
+    height: 35px;
+    width: 120px;
+    border-radius : 5px;
+    margin-left : 990px;
+    position: relative;
+    background-color: white;
+    margin-top: -16px;
+    margin-bottom: 18px;
+}
+
+.calendarioIcone{
+    margin : 4px;
+    background-color: white;
+}
+
+#data1{
+    height: 30px;
+    width: 80px;
+    border : none;
+}
+
+#data1:focus{
+    outline:none;
+}
+
+.containerPesquisa2{
+    display : flex;
+    border : 2px solid rgb(197, 189, 189);
+    height: 35px;
+    width: 120px;
+    border-radius : 5px;
+    margin-left : 830px;
+    position: absolute;
+    background-color: white;
+    margin-top: -16px;
+}
+
+#data2{
+    height: 30px;
+    width: 80px;
+    border : none;
+}
+
+#data2:focus{
+    outline:none;
+}
+
+.quadrado{
+    margin-left: 250px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block; /*torna possível colocar um quadrado ao lado do outro*/
+    cursor: pointer;
+}
+
+#estrela{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+#qnt{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 8px;
+    margin-left: 34px;
+    color: rgb(19, 19, 19);
+}
+
+#qnt2{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 8px;
+    margin-left: 910px;
+    color: rgb(19, 19, 19);
+}
+
+#name1{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 30px;
+    margin-left: 10px;
+    color: black;
+    font-size: 25px;
+}
+
+#name2{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 30px;
+    margin-left: 910px;
+    color: black;
+    font-size: 25px;
+}
+
+#localizacao{
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 4px;
+}
+
+#destino1{
+    margin-top: 60px;
+    margin-left: 33px;
+    color: black;
+}
+
+#destino2{
+    color: black;
+}
+
+.imgs{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#principal{
+    margin-left: 260px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#secundaria{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#terciaria{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 265px;
+    border-radius: 8px;
+}
+
+#quartenaria{
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 265px;
+    border-radius: 8px;
+}
+
+#descricao{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 260px;
+    color: black;
+    font-size: 16px;
+}
+
+.destaque{
+    background-color: #A2DEE2;
+    width: 1040px;
+    height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 85px;
+    margin-left: 260px;
+    border-radius: 3px;
+}
+
+#opcoes{
+    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 2px;
+    position: absolute;
+}
+
+.quadrado1{
+    margin-left: 260px;
+    margin-top: 25px;
+    background-color: #ece2e2;
+    width: 270px;
+    height: 370px;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block; /*torna possível colocar um quadrado ao lado do outro*/
+    cursor: pointer;
+}
+
+#quarto{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#name3{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 8px;
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+#acomoda{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+#qnt3{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 39px;
+    margin-left: 36px;
+    color: rgb(19, 19, 19);
+}
+
+#cama{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 60px;
+    margin-left: 9px;
+}
+
+#camas{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 64px;
+    margin-left: 36px;
+    color: rgb(19, 19, 19);
+}
+
+#wifi{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 86px;
+    margin-left: 10px;
+}
+
+#wifi2{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 89px;
+    margin-left: 36px;
+    color: rgb(19, 19, 19);
+
+}
+
+#de{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 115px;
+    margin-left: 10px;
+    color: black;
+}
+
+#preco{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 135px;
+    margin-left: 10px;
+    color: #DF7E24;
+    font-size: 20px;
+}
+
+.reservar{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 128px;
+    margin-left: 158px;
+    background-color: #41A3A9;
+    border-color: transparent;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.quadrado2{
+    margin-left: 112px;
+    margin-top: 25px;
+    background-color: #ece2e2;
+    width: 270px;
+    height: 370px;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    display: inline-block; /*torna possível colocar um quadrado ao lado do outro*/
+    cursor: pointer;
+}
+
+.quadrado3{
+    margin-left: 500px;
+    margin-top: 25px;
+    background-color: #ece2e2;
+    width: 270px;
+    height: 370px;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    display: inline-block; /*torna possível colocar um quadrado ao lado do outro*/
+    cursor: pointer;
+}
+
+.linha2{
+    margin-top: 5px;
+}
+
+.destaque2{
+    background-color: #A2DEE2;
+    width: 1040px;
+    height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    margin-left: 260px;
+    border-radius: 3px;
+}
+
+.comodidades
+{font-family: 'Ubuntu', sans-serif;
+    margin-left: 285px;
+    padding-top: 20px;
+}
+
+.topico1{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 260px;
+    padding-top: 20px;
+}
+
+.topico2{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 645px;
+    padding-top: 20px;
+}
+
+.topico3{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 1035px;
+    padding-top: 20px;
+}
+
+#servicos{
+    font-size: 18px;
+}
+
+#topicos1{
+    margin-top: 4px;
+}
+
+#topicos2{
+    margin-top: 4px;
+}
+
+#topicos3{
+    margin-top: 4px;
+}
+
+.centrais{
+    background-color: white;
+    border: 1px solid;
+    border-color: rgb(128, 126, 126);
+    margin-top: 160px;
+    font-family: 'Ubuntu', sans-serif;  
+    list-style: none;
+}
+
+#faleconosco{
+    font-size: 18px;
+    position: absolute;
+    margin-left: 1040px;
+    margin-top: 15px;
+}
+
+#central{
+    color: black;
+    margin-top: 40px;
+    position: absolute;
+    font-size: 16px;
+    margin-left: 1040px;
+    cursor: pointer;
+}
+
+#cancelamento{
+    color: black;
+    margin-top: 60px;
+    position: absolute;
+    font-size: 16px;
+    margin-left: 1040px;
+    cursor: pointer;
+}
+
+.redes{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 260px;
+    padding-top: 20px;
+}
+
+#redesSociais{
+    margin-top: 25px;
+    position: absolute;
+    font-size: 18px;
+}
+
+#facebook{
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#twitter{
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#instagram{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
+

@@ -1,0 +1,654 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.topo {
+    margin: 0;
+    background-color: #41A3A9;
+    width: 100%;
+    min-height: 32vh;
+    width: 1583px;
+
+}
+
+.container {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 0px;
+    background-color: #41A3A9;
+    width: 1583px;
+}
+
+.logo {
+    margin-top: 12px;
+    margin-left: 167px;
+
+}
+
+.cabecalho {
+    padding-left: 30px;
+
+
+}
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+    /*retira a linha debaixo do nome*/
+    padding-right: 30px;
+    /*afasta um item do outro*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    position: relative;
+    /*necessário para o efeito de seleção*/
+
+}
+
+.cabecalho nav a::after {
+    /*efeito de seleção da aba desejada*/
+    content: " ";
+    /*conteúdo vazio*/
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #f65e2b, #FF764A);
+    position: absolute;
+    top: 20px;
+    /*coloca o tracejado para baixo*/
+    left: 0px;
+    transition: width 0, 5s;
+    /*tempo para iniciar o efeito*/
+}
+
+.cabecalho nav a:hover::after {
+    width: 60px;
+}
+
+.icones {
+    margin-left: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.bandeira {
+    margin-right: 20px;
+}
+
+.planeta {
+    margin-right: 20px;
+}
+
+.idioma nav a {
+    margin-left: 6px;
+    color: white;
+    text-decoration: none;
+    /*retira a linha debaixo do nome*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.entrar button {
+    width: 110px;
+    height: 40px;
+    justify-content: left;
+    display: flex;
+    margin-left: 30px;
+    border-radius: 5px;
+    border-color: transparent;
+    /*borda transparente*/
+    cursor: pointer;
+    color: white;
+}
+
+.entrar img {
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.entrar h1 {
+    color: black;
+    margin-left: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.divPesquisa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -140px;
+    display: block;
+}
+
+.pesquisa {
+    margin-left: 240px;
+    margin-right: 280px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: left;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #FEFEFE;
+    height: 50px;
+}
+
+.pesquisa h2 {
+    font-size: 25px;
+    margin-left: 63px;
+    margin-top: 20px;
+}
+
+.pesquisa h3 {
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.pesquisa h4 {
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.barraPesquisa {
+    height: 50px;
+    margin-left: 240px;
+    margin-right: 280px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: left;
+    background-color: #FEFEFE;
+    border-radius: 3px;
+}
+
+.inputPesquisa{
+    margin-left: 10px;
+    text-align:start;
+}
+
+#barra{
+    width:  140px;
+    height: 30px;
+    border : none;
+    
+}
+
+#barra:focus{
+    outline: none;
+}
+
+#data{
+    height: 30px;
+    border : none;
+}
+
+#data:focus{
+    outline:none;
+}
+
+#quantidade{
+    height: 30px;
+    border : none;
+}
+
+#quantidade:focus{
+    outline : none;
+}
+
+#botao {
+    width: 100px;
+    height: 30px;
+    background-color: #FF764A;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    border-color: transparent;
+    border-bottom-style: 3px;
+    border-right-style: 3px;
+    border-radius: 3px;
+}
+
+.botaoContainer {
+    display : flex;
+    border : 2px solid transparent;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 2px;
+    background-color: #FF764A;
+}
+
+.lupa {
+    position: relative;
+    width: 30px;
+    left: 3px;
+}
+
+.containerPesquisa{
+    display : flex;
+    border : 2px solid black;
+    height: 35px;
+    border-radius : 5px;
+    margin-left : 2px;
+}
+
+.calendarioIcone{
+    margin : 4px;
+}
+
+/*começo da barra de propaganda laranja*/
+
+.outdoor{
+    background-color: #ffaa65; /*mudar a imagem*/
+    width: 1583px;
+    height: 250px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; /*colocar em negrito!!!!*/
+    margin-top: 100px;
+}
+
+#banner{
+    margin-left: 1060px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 25px;
+}
+
+#folego{
+    font-size: 35px;
+    margin-left: 284px;
+    margin-top: 90px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+}
+
+#experiencias{
+    font-size: 25px;
+    margin-left: 284px;
+    margin-top: 130px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+
+}
+
+/*barras de "ver mais"*/
+
+.destaque{
+    background-color: #A2DEE2;
+    width: 975px;
+    height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 30px;
+    margin-left: 284px;
+    border-radius: 3px;
+}
+
+#resortsDestaque{
+    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 2px;
+    position: absolute;
+}
+
+#mais{
+    background-color: #FF764A;
+    display: flex;
+    position: absolute;
+    border-color: transparent;
+    margin-left: 780px;
+    width: 194px;
+    height: 30px;
+    border-radius: 3px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+#verMais{
+    color: white;
+    font-size: 22px;
+    margin-top: 2px;
+    position: absolute;
+    margin-left: 52px;
+    cursor: pointer;    
+
+}
+
+/*começo dos quadrados com imagens dos hotéis*/
+
+.quadrado{
+    margin-left: 284px;
+    margin-top: 25px;
+    background-color: #ece2e2;
+    width: 270px;
+    height: 300px;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block; /*torna possível colocar um quadrado ao lado do outro*/
+    cursor: pointer;
+}
+
+#ilheus{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#estrela{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+#qnt{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 8px;
+    margin-left: 34px;
+    color: rgb(19, 19, 19);
+}
+
+#name{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 30px;
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+#destino{
+    margin-top: 55px;
+    margin-left: 10px;
+    color: rgb(19, 19, 19);
+}
+
+.quadrado2{
+    margin-left: 83px;
+    margin-top: 25px;
+    background-color: #ece2e2;
+    width: 270px;
+    height: 300px;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    display: inline-block; /*torna possível colocar um quadrado ao lado do outro*/
+    cursor: pointer;
+}
+
+#portoSeguro{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+.quadrado3{
+    margin-left: 435px;
+    margin-top: 25px;
+    background-color: #ece2e2;
+    width: 270px;
+    height: 300px;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    display: inline-block; /*torna possível colocar um quadrado ao lado do outro*/
+    cursor: pointer;
+}
+
+#angra{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#olimpia{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#atibaia{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#camacari{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#puntaCana{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#cancun{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#paris{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#florianopolis{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#natal{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#rioQuente{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
+#nameQuebra{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 30px;
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+#destinoEspacado{
+    margin-top: 76px;
+    margin-left: 10px;
+    color: rgb(19, 19, 19);
+}
+
+/*começo da barra de propaganda amarela*/
+
+.outdoor2{
+    background-color: rgb(253, 218, 122);
+    width: 1583px;
+    height: 250px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; /*colocar em negrito!!!!*/
+    margin-top: 30px;
+}
+
+#banner2{
+    margin-left: 1070px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 25px;
+}
+
+#relaxar{
+    font-size: 35px;
+    margin-left: 284px;
+    margin-top: 90px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+}
+
+#idealDiferente{
+    font-size: 25px;
+    margin-left: 288px;
+    margin-top: 130px;
+    display: block; /*torna possível mexer somente nesse elemento*/
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+}
+
+.final{
+    margin-left: 284px;
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#hotel{
+    position: absolute;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#milhares{
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 90px;
+    font-size: 18px;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#texto1{
+    margin-top: 25px;
+    margin-left: 90px;
+    font-size: 16px;
+    position: relative;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#calendario{
+    margin-left: 360px;
+    position: absolute;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#cancelamento_online{
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 445px;
+    font-size: 18px;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#texto2{
+    margin-top: 25px;
+    margin-left: 445px;
+    font-size: 16px;
+    position: relative;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#atendimento{
+    margin-left: 700px;
+    position: absolute;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#duvidas{
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 785px;
+    font-size: 18px;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+#texto3{
+    margin-top: 25px;
+    margin-left: 785px;
+    font-size: 16px;
+    position: relative;
+    display: inline-block; /*torna possível colocar uma img ao lado da outra*/
+}
+
+.centrais{
+    background-color: white;
+    border: 1px solid;
+    border-color: rgb(128, 126, 126);
+    margin-top: 150px;
+    font-family: 'Ubuntu', sans-serif;  
+    list-style: none;
+}
+
+#faleconosco{
+    font-size: 18px;
+    position: absolute;
+    margin-left: 982px;
+    margin-top: 15px;
+}
+
+#central{
+    color: black;
+    margin-top: 40px;
+    position: absolute;
+    font-size: 16px;
+    margin-left: 982px;
+    cursor: pointer;
+}
+
+#cancelamento{
+    color: black;
+    margin-top: 60px;
+    position: absolute;
+    font-size: 16px;
+    margin-left: 982px;
+    cursor: pointer;
+}
+
+.redes{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 285px;
+    padding-top: 20px;
+}
+
+#redesSociais{
+    margin-top: 25px;
+    position: absolute;
+    font-size: 18px;
+}
+
+#facebook{
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#twitter{
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#instagram{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 23px;
+    border-color: transparent;
+    cursor: pointer;
+}
