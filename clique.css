@@ -321,6 +321,12 @@
     cursor: pointer;
 }
 
+.pop{
+    display: block;
+    border: 0;
+    cursor: pointer;
+}
+
 #quarto{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
@@ -435,6 +441,54 @@
     margin-top: 5px;
 }
 
+/*Começo do Pop Up*/
+
+.popup-wrapper{
+    background: rgb(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup{
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 580px;
+    max-height: 430px;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+}
+
+.popup a {
+    font-family: 'Ubuntu', sans-serif;;
+    cursor: pointer;
+    padding: 6px 10px;
+    text-decoration: none;
+    background: gray;
+    color: white;
+}
+
+.popup-close{
+    font-family: 'Ubuntu', sans-serif;;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+#one{
+    border-radius: 8px;
+}
+
 .destaque2{
     background-color: #A2DEE2;
     width: 1040px;
@@ -445,8 +499,8 @@
     border-radius: 3px;
 }
 
-.comodidades
-{font-family: 'Ubuntu', sans-serif;
+.comodidades{
+    font-family: 'Ubuntu', sans-serif;
     margin-left: 285px;
     padding-top: 20px;
 }
