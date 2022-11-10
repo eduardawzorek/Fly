@@ -455,15 +455,17 @@
 }
 
 .popup{
+    margin-left: 500px;
     font-family:'Ubuntu', sans-serif;
     text-align: center;
     width: 100%;
     max-width: 580px;
     max-height: 430px;
     margin: 10% auto;
-    padding: 20px;
     background: white;
     position: relative;
+    border-radius: 8px;
+
 }
 
 .popup a {
@@ -471,8 +473,8 @@
     cursor: pointer;
     padding: 6px 10px;
     text-decoration: none;
-    background: gray;
-    color: white;
+    background: white;
+    color: black;
 }
 
 .popup-close{
@@ -481,13 +483,42 @@
     top: 5px;
     right: 10px;
     cursor: pointer;
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 25px;
 }
 
 #one{
     border-radius: 8px;
 }
+
+#direita{
+    margin-left: 300px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 8px;
+    border: none;
+    margin-top: 395px;
+    background: rgb(226, 226, 226);
+    color: black;
+    width: 40px;
+    height: 35px;
+}
+
+#esquerda{
+    margin-left: 240px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 8px;
+    border: none;
+    margin-top: 395px;
+    background: rgb(226, 226, 226);
+    color: black;
+    width: 40px;
+    height: 35px;
+}
+
 
 .destaque2{
     background-color: #A2DEE2;
