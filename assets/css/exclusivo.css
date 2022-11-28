@@ -7,7 +7,6 @@
 
 .topo {
     margin: 0;
-    background-color: #41A3A9;
     width: 100%;
     min-height: 32vh;
     width: 1583px;
@@ -119,6 +118,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold; /*colocar em negrito!!!!*/
     margin-top: -30px;
+    background-color: #41A3A9;
 }
 
 #tempo{
@@ -550,3 +550,4 @@
     border-color: transparent;
     cursor: pointer;
 }
+

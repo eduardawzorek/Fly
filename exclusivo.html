@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="topo">
+    <form class="topo" method="post" action="conexao.php">
 
         <div class="container">
 
@@ -62,130 +62,131 @@
 
         <div class="divPesquisa">
 
-        <div class="body">
+            <div class="body">
 
-            <div class="barraPesquisa">
-                
-                <div class='containerPesquisa'>
-                    <img class="lupa" src="assets/img/pesquisa.png" width="20" height="29">
-                    <input class='inputPesquisa' type="text" id="barra" placeholder="Vai pra onde?">
-                </div>
-                        
-                <div class='containerPesquisa'>
-                    <img class="calendarioIcone" src="assets/img/calendario2.png" width="20" height="20">
-                    <input class='inputPesquisa' type="text" id="data" placeholder="Entrada">
-                </div>
+                <div class="barraPesquisa">
+                    <div class='containerPesquisa'>
+                        <img class="lupa" src="assets/img/pesquisa.png" width="20" height="29">
+                        <input class='inputPesquisa' type="text" name="destino" id="barra" placeholder="Vai pra onde?">
+                    </div>
 
-                <div class='containerPesquisa'>
-                    <img class="calendarioIcone" src="assets/img/calendario2.png" width="20" height="20">
-                    <input class='inputPesquisa' type="text" id="data" placeholder="Saída">
-                </div>
+                    <div class='containerPesquisa'>
+                        <img class="calendarioIcone" src="assets/img/calendario2.png" width="20" height="20">
+                        <input class='inputPesquisa' type="text" name="entrada" id="data" placeholder="Entrada">
+                    </div>
 
-                <div class='containerPesquisa'>
-                    <img class="calendarioIcone" src="assets/img/perfil2.png" width="20" height="20">
-                    <input class='inputPesquisa' type="text" id="quantidade" placeholder="Quantidade de pessoas">
-                </div>
+                    <div class='containerPesquisa'>
+                        <img class="calendarioIcone" src="assets/img/calendario2.png" width="20" height="20">
+                        <input class='inputPesquisa' type="text"  name="saida" id="data" placeholder="Saída">
+                    </div>
 
-                <div class='containerPesquisa'>
-                    <img class="dinheiroIcone" src="assets/img/dinheiro.png" width="20" height="20">
-                    <input class='inputPesquisa' type="text" id="quantidade" placeholder="Valor máximo a ser gasto">
+                    <div class='containerPesquisa'>
+                        <img class="calendarioIcone" src="assets/img/perfil2.png" width="20" height="20">
+                        <input class='inputPesquisa' type="text" name="quantidade" id="quantidade" placeholder="Quantidade de pessoas">
+                    </div>
+
+                    <div class='containerPesquisa'>
+                        <img class="dinheiroIcone" src="assets/img/dinheiro.png" width="20" height="20">
+                        <input class='inputPesquisa' type="text" name="valor" id="quantidade" placeholder="Valor máximo a ser gasto">
+                    </div>
                 </div>
-        
             </div>
-        </div>
         </div>
     </div>
 
-        <div class="escolher">
-            <div class="names">
-                <h1 id="nomeIncluir">Refeição Inclusa</h1>
-            </div>
-                <div class='refeicao'>
-                    <img class="refeicaoIcone" src="assets/img/refeicao.png" width="30" height="30">
-                        <select id="incluir">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                </div>
-            <div class="names2">
-                <h1 id="nomeIncluir">Hospedagem Inclusa</h1>
-            </div>    
-                <div class='hospedagem'>
-                    <img class="hospedagemIcone" src="assets/img/hospedagem.png" width="30" height="30">
-                        <select id="incluir">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                </div>
-            <div class="names3">
-                <h1 id="nomeIncluir">Aéreo Incluso</h1>
-            </div>    
-                <div class='aereo'>
-                    <img class="aereoIcone" src="assets/img/aereo.png" width="30" height="30">
-                        <select id="incluir">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                </div>
-            <div class="names4">
-                <h1 id="nomeIncluir">Bagagem Inclusa</h1>
-            </div>    
-                <div class='bagagem'>
-                    <img class="malaIcone" src="assets/img/bagagem.png" width="30" height="30">
-                        <select id="incluir">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                </div>                
+    <div class="escolher">
+        <div class="names">
+            <h1 id="nomeIncluir">Refeição Inclusa</h1>
         </div>
-
-        <div class="finaleira">
-            <div class='localizacao'>
-                <img class="localizacaoIcone" src="assets/img/localizacao.png" width="30" height="30">
-                <input class='inputPesquisa' type="text" id="quantidade1" placeholder="Lugares que não podem faltar">
-            </div>
-            <div class='email'>
-                <img class="emailIcone" src="assets/img/email.png" width="30" height="30">
-                <input class='inputPesquisa' type="text" id="quantidade1" placeholder="E-mail para contato">
-            </div>
-            <div class='telefone'>
-                <img class="telefoneIcone" src="assets/img/telefone.png" width="25" height="25">
-                <input class='inputPesquisa' type="text" id="quantidade1" placeholder="Telefone para contato">
-            </div>
-            <div class="names5">
-                <h1>*Todos os campos</h1>
-            </div>
-            <div class="names6">
-                <h1>são obrigatórios</h1>
-            </div>      
+        <div class='refeicao'>
+            <img class="refeicaoIcone" src="assets/img/refeicao.png" width="30" height="30">
+            <select id="incluir">
+                <option value="sim" name="refeicao">Sim</option>
+                <option value="nao" name="refeicao">Não</option>
+            </select>
         </div>
+        <div class="names2">
+            <h1 id="nomeIncluir">Hospedagem Inclusa</h1>
+        </div>
+        <div class='hospedagem'>
+            <img class="hospedagemIcone" src="assets/img/hospedagem.png" width="30" height="30">
+            <select id="incluir">
+                <option value="sim" name="hospedagem">Sim</option>
+                <option value="nao" name="hospedagem">Não</option>
+            </select>
+        </div>
+        <div class="names3">
+            <h1 id="nomeIncluir">Aéreo Incluso</h1>
+        </div>
+        <div class='aereo'>
+            <img class="aereoIcone" src="assets/img/aereo.png" width="30" height="30">
+            <select id="incluir">
+                <option value="sim" name="aereo">Sim</option>
+                <option value="nao" name="aereo">Não</option>
+            </select>
+        </div>
+        <div class="names4">
+            <h1 id="nomeIncluir">Bagagem Inclusa</h1>
+        </div>
+        <div class='bagagem'>
+            <img class="malaIcone" src="assets/img/bagagem.png" width="30" height="30">
+            <select id="incluir">
+                <option value="sim" name="bagagem">Sim</option>
+                <option value="nao" name="bagagem">Não</option>
+            </select>
+        </div>
+    </div>
 
-        <div class='botaoContainer'>
-            <button type="submit" id="botao">
+    <div class="finaleira">
+        <div class='localizacao'>
+            <img class="localizacaoIcone" src="assets/img/localizacao.png" width="30" height="30">
+            <input class='inputPesquisa' type="text" name="lugares" id="quantidade1" placeholder="Lugares que não podem faltar">
+        </div>
+        <div class='email'>
+            <img class="emailIcone" src="assets/img/email.png" width="30" height="30">
+            <input class='inputPesquisa' type="text" name="email" id="quantidade1" placeholder="E-mail para contato">
+        </div>
+        <div class='telefone'>
+            <img class="telefoneIcone" src="assets/img/telefone.png" width="25" height="25">
+            <input class='inputPesquisa' type="text" name="telefone" id="quantidade1" placeholder="Telefone para contato">
+        </div>
+        <div class="names5">
+            <h1>*Todos os campos</h1>
+        </div>
+        <div class="names6">
+            <h1>são obrigatórios</h1>
+        </div>
+    </div>
+
+    <div class='botaoContainer'>
+        <button type="submit" id="botao">
             <h5>Enviar</h5>
-        </div>
-            </button> 
-    
-            <div class="centrais">
-                <h1 id="faleconosco">Fale Conosco</h1>
-                <li><a href="https://api.whatsapp.com/send?phone=5547996555961&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20ajuda%20com%20o%20site"
-                     id="central">Central de Ajuda</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5547996555961&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20pol%C3%ADtica%20de%20cancelamento%20da%20empresa"
-                     id="cancelamento">Política de Cancelamento</a></li>
-            </div>
-    
-            <div class="redes">
-                <h1 id="redesSociais">Fly nas redes sociais:</h1>
-                <button id="facebook">
-                    <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="assets/img/facebook.png" width="20px" height="20px"></a>
-                </button>
-                <button id="twitter">
-                    <a href="https://twitter.com/login?lang=pt"><img src="assets/img/twitter.png" width="20px" height="20px"></a>
-                </button>
-                <button id="instagram">
-                    <a href="https://www.instagram.com/"><img src="assets/img/instagram.png" width="20px" height="20px"></a>
-                </button>
-            </div>
-    
-    </body>
-    </html>
+    </div>
+    </button>
+
+    <div class="centrais">
+        <h1 id="faleconosco">Fale Conosco</h1>
+        <li><a href="https://api.whatsapp.com/send?phone=5547996555961&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20ajuda%20com%20o%20site"
+                id="central">Central de Ajuda</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5547996555961&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20pol%C3%ADtica%20de%20cancelamento%20da%20empresa"
+                id="cancelamento">Política de Cancelamento</a></li>
+    </div>
+
+    <div class="redes">
+        <h1 id="redesSociais">Fly nas redes sociais:</h1>
+        <button id="facebook">
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="assets/img/facebook.png"
+                    width="20px" height="20px"></a>
+        </button>
+        <button id="twitter">
+            <a href="https://twitter.com/login?lang=pt"><img src="assets/img/twitter.png" width="20px"
+                    height="20px"></a>
+        </button>
+        <button id="instagram">
+            <a href="https://www.instagram.com/"><img src="assets/img/instagram.png" width="20px" height="20px"></a>
+        </button>
+    </form>
+
+</body>
+
+</html>
