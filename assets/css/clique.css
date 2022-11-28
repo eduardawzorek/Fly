@@ -9,7 +9,7 @@
     background-color: #41A3A9;
     width: 100%;
     width: 1583px;
-    height: 80px;
+    height: 70px;
 }
 
 .container {
@@ -24,11 +24,12 @@
 
 .logo {
     margin-top: 12px;
-    margin-left: 167px;
+    margin-left: 110px;
 }
 
 .cabecalho {
     padding-left: 30px;
+    margin-top: 5px;
 }
 
 .cabecalho nav a {
@@ -63,6 +64,7 @@
 }
 
 .icones {
+    margin-top: 5px;
     margin-left: 10px;
     display: flex;
     justify-content: left;
@@ -76,6 +78,13 @@
     margin-right: 20px;
 }
 
+.idioma{
+    margin-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+}
+
 .idioma nav a {
     margin-left: 6px;
     color: white;
@@ -86,7 +95,7 @@
 }
 
 .entrar button {
-    width: 110px;
+    width: 160px;
     height: 40px;
     justify-content: left;
     display: flex;
@@ -95,62 +104,39 @@
     border-color: transparent;
     /*borda transparente*/
     cursor: pointer;
-    color: white;
+    background-color: #FF764A;
 }
 
-.entrar img {
-    margin-left: 4px;
+.perfil {
+    margin-left: 5px;
     margin-top: 4px;
 }
 
-.entrar h1 {
-    color: black;
-    margin-left: 6px;
+#yes {
+    color: white;
+    margin-left: 10px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     margin-top: 8px;
-}
-
-.button{
-    background-color: #A2DEE2;
-    width: 1583px;
-    height: 30px;
-    
-}
-
-.botao{
-    margin-top: 15px;
-    margin-left: 1150px;
-    background-color: #FF764A;
-    color: white;
-    cursor: pointer;
-    width: 150px;
-    height: 34px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 8px;
-    border-color: transparent;
-    border-bottom-style: 3px;
-    border-right-style: 3px;
-    border-radius: 3px;
 }
 
 .opcoes{
     display: flex;
     background-color: #A2DEE2;
     width: 1583px;
+    height: 50px;
 }
 
 .containerPesquisa1{
-    margin-top: 0px;
-    display : flex;
-    border : 2px solid rgb(197, 189, 189);
+    display: flex;
+    border: 2px solid rgb(197, 189, 189);
     height: 35px;
     width: 120px;
-    border-radius : 5px;
-    margin-left : 990px;
+    border-radius: 5px;
+    margin-left: 1180px;
     position: relative;
     background-color: white;
-    margin-top: -16px;
+    margin-top: 7px;
     margin-bottom: 18px;
 }
 
@@ -175,10 +161,10 @@
     height: 35px;
     width: 120px;
     border-radius : 5px;
-    margin-left : 830px;
-    position: absolute;
+    margin-left : -280px;
+    position: relative;
     background-color: white;
-    margin-top: -16px;
+    margin-top: 7px;
 }
 
 #data2{
@@ -209,32 +195,34 @@
 
 #qnt{
     position: absolute; /*torna possível mexer somente nesse elemento*/
-    margin-top: 8px;
+    margin-top: 5px;
     margin-left: 34px;
     color: rgb(19, 19, 19);
 }
 
 #qnt2{
     position: absolute; /*torna possível mexer somente nesse elemento*/
-    margin-top: 8px;
+    margin-top: 5px;
     margin-left: 910px;
     color: rgb(19, 19, 19);
 }
 
 #name1{
     position: absolute; /*torna possível mexer somente nesse elemento*/
-    margin-top: 30px;
+    margin-top: 28px;
     margin-left: 10px;
     color: black;
     font-size: 25px;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 #name2{
     position: absolute; /*torna possível mexer somente nesse elemento*/
-    margin-top: 30px;
+    margin-top: 28px;
     margin-left: 910px;
     color: black;
     font-size: 25px;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 #localizacao{
@@ -244,13 +232,13 @@
 }
 
 #destino1{
-    margin-top: 60px;
+    margin-top: 58px;
     margin-left: 33px;
-    color: black;
 }
 
 #destino2{
     color: black;
+    text-decoration: underline;
 }
 
 .imgs{
@@ -259,34 +247,32 @@
 
 #principal{
     margin-left: 260px;
-    margin-top: 20px;
     border-radius: 8px;
 }
 
 #secundaria{
     position: absolute;
     margin-left: 20px;
-    margin-top: 20px;
     border-radius: 8px;
 }
 
 #terciaria{
     position: absolute;
     margin-left: 20px;
-    margin-top: 265px;
+    margin-top: 245px;
     border-radius: 8px;
 }
 
 #quartenaria{
     position: absolute;
     margin-left: 265px;
-    margin-top: 265px;
+    margin-top: 245px;
     border-radius: 8px;
 }
 
 #descricao{
     position: absolute;
-    margin-top: 15px;
+    margin-top: 6px;
     margin-left: 260px;
     color: black;
     font-size: 16px;
@@ -300,18 +286,20 @@
     margin-top: 85px;
     margin-left: 260px;
     border-radius: 3px;
+    color: black;
 }
 
 #opcoes{
     margin-left: 10px;
-    font-size: 22px;
+    font-size: 21px;
     margin-top: 2px;
     position: absolute;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 .quadrado1{
     margin-left: 260px;
-    margin-top: 25px;
+    margin-top: 30px;
     background-color: #ece2e2;
     width: 270px;
     height: 370px;
@@ -339,11 +327,12 @@
     margin-left: 10px;
     color: black;
     font-size: 18px;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 #acomoda{
     position: absolute; /*torna possível mexer somente nesse elemento*/
-    margin-top: 35px;
+    margin-top: 38px;
     margin-left: 10px;
 }
 
@@ -356,7 +345,7 @@
 
 #cama{
     position: absolute; /*torna possível mexer somente nesse elemento*/
-    margin-top: 60px;
+    margin-top: 63px;
     margin-left: 9px;
 }
 
@@ -369,7 +358,7 @@
 
 #wifi{
     position: absolute; /*torna possível mexer somente nesse elemento*/
-    margin-top: 86px;
+    margin-top: 89px;
     margin-left: 10px;
 }
 
@@ -394,6 +383,7 @@
     margin-left: 10px;
     color: #DF7E24;
     font-size: 20px;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 .reservar{
@@ -405,15 +395,19 @@
     border-radius: 8px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 12px;
     width: 100px;
     height: 30px;
     cursor: pointer;
 }
 
+#botao{
+    font-size: 20px;
+
+}
+
 .quadrado2{
     margin-left: 112px;
-    margin-top: 25px;
+    margin-top: 30px;
     background-color: #ece2e2;
     width: 270px;
     height: 370px;
@@ -426,7 +420,7 @@
 
 .quadrado3{
     margin-left: 500px;
-    margin-top: 25px;
+    margin-top: 30px;
     background-color: #ece2e2;
     width: 270px;
     height: 370px;
@@ -438,7 +432,208 @@
 }
 
 .linha2{
-    margin-top: 5px;
+    margin-top: 0px;
+}
+
+/*Começo do Modal*/
+
+/*Começo do Modal*/
+
+.modal-content{
+    margin-top: 160px;
+}
+
+.modal-body{
+    height: 350px; /*torna possível expandir o modal*/
+}
+
+
+#exampleModalLabel{
+    font-weight: bold; /*colocar em negrito!!!!*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#de1{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 240px;
+    margin-left: -395px;
+    color: black;
+}
+
+#preco1{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 262px;
+    margin-left: -396px;
+    color: #DF7E24;
+    font-size: 20px;
+    font-weight: bold; /*colocar em negrito!!!!*/
+}
+
+.reservar1{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 253px;
+    margin-left: -150px;
+    background-color: #41A3A9;
+    border-color: transparent;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#bote{
+    font-size: 20px;
+}
+
+#acomodacao{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    margin-top: -38px;
+}
+
+#qnt4{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 36px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: -38px;
+}
+
+#areaa{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: -38px;
+}
+
+#qnt5{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 36px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: -39px;
+}
+
+#caminha{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: -41px;
+}
+
+#qnt6{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 40px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: -41px;
+}
+
+#chuveiro{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: -39px;
+}
+
+#qnt7{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 36px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: -34px;
+}
+
+#cozinha{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: 24px;
+}
+
+#qnt8{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 38px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: 28px;
+}
+
+#varanda{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: 32px;
+}
+
+#qnt9{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 38px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: 33px;
+}
+
+#ar-condicionado{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: 36px;
+}
+
+#qnt10{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 39px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: 36px;
+}
+
+#secador-de-cabelo{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: 44px;
+}
+
+#qnt11{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 38px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: 46px;
+}
+
+#TV{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: 50px;
+}
+
+#qnt12{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 36px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: 50px;
+}
+
+#servico-de-quarto{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 10px;
+    display: block;
+    margin-top: 50px;
+}
+
+#qnt13{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-left: 39px;
+    color: rgb(19, 19, 19);
+    display: block;
+    margin-top: 52px;
 }
 
 /*Começo do Pop Up*/
@@ -459,8 +654,8 @@
     font-family:'Ubuntu', sans-serif;
     text-align: center;
     width: 100%;
-    max-width: 580px;
-    max-height: 430px;
+    max-width: 900px;
+    max-height: 550px;
     margin: 10% auto;
     background: white;
     position: relative;
@@ -491,34 +686,58 @@
 
 #one{
     border-radius: 8px;
+    display: block;
+    background-color: white;
 }
 
 #direita{
-    margin-left: 300px;
+    margin-left: 530px;
     cursor: pointer;
     position: absolute;
-    border-radius: 8px;
+    display: flex;
     border: none;
-    margin-top: 395px;
-    background: rgb(226, 226, 226);
-    color: black;
-    width: 40px;
-    height: 35px;
+    background: none;
+    margin-top: 220px;
 }
 
 #esquerda{
-    margin-left: 240px;
+    margin-left: 20px;
     cursor: pointer;
     position: absolute;
-    border-radius: 8px;
+    display: flex;
     border: none;
-    margin-top: 395px;
-    background: rgb(226, 226, 226);
-    color: black;
-    width: 40px;
-    height: 35px;
+    background: none;
+    margin-top: 220px;
 }
 
+#nametop{
+    margin-top: 10px;
+    margin-left: 595px;
+    font-size: 18px;
+    position: absolute;
+    display: flex;
+}
+
+#area{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    margin-top: 35px;
+    margin-left: 146px;
+}
+
+#textarea{
+    position: absolute; /*torna possível mexer somente nesse elemento*/
+    display: flex;
+    margin-top: 35px;
+    margin-left: 600px;
+}
+
+#tamanho{
+    margin-top: 300px;
+    margin-left: 595px;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+}
 
 .destaque2{
     background-color: #A2DEE2;
@@ -536,9 +755,19 @@
     padding-top: 20px;
 }
 
+#options{
+    margin-left: 10px;
+    font-size: 21px;
+    margin-top: 2px;
+    position: absolute;
+    color: black;
+    font-weight: bold; /*colocar em negrito!!!!*/
+}
+
 .topico1{
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
+    color: black;
     margin-left: 260px;
     padding-top: 20px;
 }
@@ -546,6 +775,7 @@
 .topico2{
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
+    color: black;
     margin-left: 645px;
     padding-top: 20px;
 }
@@ -553,12 +783,14 @@
 .topico3{
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
+    color: black;
     margin-left: 1035px;
     padding-top: 20px;
 }
 
 #servicos{
     font-size: 18px;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 #topicos1{
@@ -577,16 +809,18 @@
     background-color: white;
     border: 1px solid;
     border-color: rgb(128, 126, 126);
-    margin-top: 160px;
+    margin-top: 190px;
     font-family: 'Ubuntu', sans-serif;  
     list-style: none;
 }
 
 #faleconosco{
+    color: black;
     font-size: 18px;
     position: absolute;
     margin-left: 1040px;
     margin-top: 15px;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 #central{
@@ -596,6 +830,7 @@
     font-size: 16px;
     margin-left: 1040px;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #cancelamento{
@@ -605,6 +840,7 @@
     font-size: 16px;
     margin-left: 1040px;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .redes{
@@ -617,6 +853,8 @@
     margin-top: 25px;
     position: absolute;
     font-size: 18px;
+    color: black;
+    font-weight: bold; /*colocar em negrito!!!!*/
 }
 
 #facebook{

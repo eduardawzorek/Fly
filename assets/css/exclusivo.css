@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 .topo {
@@ -25,14 +26,11 @@
 
 .logo {
     margin-top: 12px;
-    margin-left: 167px;
-
+    margin-left: 280px;
 }
 
 .cabecalho {
     padding-left: 30px;
-
-
 }
 
 .cabecalho nav a {
@@ -99,7 +97,7 @@
     border-color: transparent;
     /*borda transparente*/
     cursor: pointer;
-    color: white;
+    background-color: #FF764A;
 }
 
 .entrar img {
@@ -108,8 +106,8 @@
 }
 
 .entrar h1 {
-    color: black;
-    margin-left: 6px;
+    color: white;
+    margin-left: 10px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     margin-top: 8px;

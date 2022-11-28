@@ -26,7 +26,7 @@
 
 .logo {
     margin-top: 12px;
-    margin-left: 167px;
+    margin-left: 268px;
 
 }
 
@@ -101,17 +101,17 @@
     border-color: transparent;
     /*borda transparente*/
     cursor: pointer;
-    color: white;
+    background-color: #FF764A;
 }
 
-.entrar img {
-    margin-left: 4px;
+.perfil {
+    margin-left: 5px;
     margin-top: 4px;
 }
 
-.entrar h1 {
-    color: black;
-    margin-left: 6px;
+#yes {
+    color: white;
+    margin-left: 10px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     margin-top: 8px;
@@ -246,10 +246,10 @@
     margin : 4px;
 }
 
-/*começo da barra de propaganda amarela*/
+/*começo da barra de propaganda laranja*/
 
 .outdoor{
-    background-color: #F5C377;
+    background-color: #ffaa65; /*mudar a imagem*/
     width: 1583px;
     height: 250px;
     font-family: 'Ubuntu', sans-serif;
@@ -264,7 +264,7 @@
     margin-top: 25px;
 }
 
-#imperdiveis{
+#folego{
     font-size: 35px;
     margin-left: 284px;
     margin-top: 90px;
@@ -272,7 +272,7 @@
     position: absolute; /*torna possível mexer somente nesse elemento*/
 }
 
-#repletos{
+#experiencias{
     font-size: 25px;
     margin-left: 284px;
     margin-top: 130px;
@@ -293,33 +293,11 @@
     border-radius: 3px;
 }
 
-#hoteisDestaque{
+#resortsDestaque{
     margin-left: 10px;
     font-size: 22px;
     margin-top: 2px;
     position: absolute;
-}
-
-#mais{
-    background-color: #FF764A;
-    display: flex;
-    position: absolute;
-    border-color: transparent;
-    margin-left: 780px;
-    width: 194px;
-    height: 30px;
-    border-radius: 3px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-#verMais{
-    color: white;
-    font-size: 22px;
-    margin-top: 2px;
-    position: absolute;
-    margin-left: 52px;
-    cursor: pointer;    
-
 }
 
 /*começo dos quadrados com imagens dos hotéis*/
@@ -336,7 +314,7 @@
     cursor: pointer;
 }
 
-#fortaleza{
+#ilheus{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
@@ -382,7 +360,7 @@
     cursor: pointer;
 }
 
-#caldasNovas{
+#portoSeguro{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
@@ -401,31 +379,31 @@
     cursor: pointer;
 }
 
+#angra{
+    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
+    border-radius: 4px;
+    display: flex;
+}
+
 #olimpia{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
 }
 
-#buzios{
+#atibaia{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
 }
 
-#gramado{
+#camacari{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
 }
 
-#pernambuco{
-    position: relative; /*torna possível adicionar outros elementos logo abaixo*/
-    border-radius: 4px;
-    display: flex;
-}
-
-#lasVegas{
+#puntaCana{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
@@ -443,19 +421,19 @@
     display: flex;
 }
 
-#mata{
+#florianopolis{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
 }
 
-#fozDoiguacu{
+#natal{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
 }
 
-#jijoca{
+#rioQuente{
     position: relative; /*torna possível adicionar outros elementos logo abaixo*/
     border-radius: 4px;
     display: flex;
@@ -475,10 +453,10 @@
     color: rgb(19, 19, 19);
 }
 
-/*começo da barra de propaganda verde*/
+/*começo da barra de propaganda amarela*/
 
 .outdoor2{
-    background-color: #A8FFAB;
+    background-color: rgb(253, 218, 122);
     width: 1583px;
     height: 250px;
     font-family: 'Ubuntu', sans-serif;
@@ -493,7 +471,7 @@
     margin-top: 25px;
 }
 
-#ferias{
+#relaxar{
     font-size: 35px;
     margin-left: 284px;
     margin-top: 90px;
@@ -501,9 +479,9 @@
     position: absolute; /*torna possível mexer somente nesse elemento*/
 }
 
-#ideal{
+#idealDiferente{
     font-size: 25px;
-    margin-left: 370px;
+    margin-left: 288px;
     margin-top: 130px;
     display: block; /*torna possível mexer somente nesse elemento*/
     position: absolute; /*torna possível mexer somente nesse elemento*/
